@@ -15,7 +15,7 @@ export default function Home() {
         <section id="home" className="section">
           <Welcome />
           <figure className="figure">
-            <DotLottieReact src="/lottie/animation1.lottie" loop autoplay />
+            <DotLottieReact src={`${import.meta.env.BASE_URL}lottie/animation1.lottie`} loop autoplay />
           </figure>
         </section>
 

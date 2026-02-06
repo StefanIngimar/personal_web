@@ -17,7 +17,7 @@ const projects: Project[] = [
     year: "2025",
     description: "A school project where I developed a web application that uses computer vision to identify and report road damages such as potholes and cracks. The application allows users to upload images of road conditions, which are then analyzed using a pre-trained YOLOv5 model to detect damages. The detected damages are marked on the images, and users can submit reports to local authorities for maintenance.",
     stack: ["Python", "Django", "FastAPI", "Docker", "Kubernetes", "YOLOv5"],
-    diagram: "/images/systemarch.png"
+    diagram: `${import.meta.env.BASE_URL}images/systemarch.png`
   },
   {
     id: "steering",
@@ -34,7 +34,7 @@ const projects: Project[] = [
     year: "2025",
     description: "A school project where I, together with a team developed a microservice-based appointment system for dental clinics. The system consists of multiple services, including an API gateway, authentication service, appointment management service, and notification service. We used MQTT for communication between services and SQLite for data storage. The project was containerized using Docker for easy deployment.",
     stack: ["Python", "MQTT", "SQLite", "Docker", "Vue"],
-    diagram: "/images/systemArchitecture.v6.png",
+    diagram: `${import.meta.env.BASE_URL}images/systemArchitecture.v6.png`,
   },
 ];
 
